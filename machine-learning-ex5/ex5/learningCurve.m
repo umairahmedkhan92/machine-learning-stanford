@@ -52,7 +52,7 @@ error_val   = zeros(m, 1);
 %
 
 % ---------------------- Sample Solution ----------------------
-<<<<<<< HEAD
+
 for i = 1:m, 
 	% Adding 1s column in X and iterating to i training examples
 	X_new = [ones(i, 1) X(1:i, :)]; 
@@ -69,14 +69,7 @@ for i = 1:m,
 	% Computing the cross-validation set error
 	[error_val(i), grad] = linearRegCostFunction(Xval_new, yval, theta, 0);
 end 
-=======
 
-
-
-
-
-
->>>>>>> 5fcbc5e322f43991569030e089774b831086481c
 
 % -------------------------------------------------------------
 

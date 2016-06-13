@@ -39,8 +39,6 @@ error_val = zeros(length(lambda_vec), 1);
 %
 %
 
-
-<<<<<<< HEAD
 for i = 1:length(lambda_vec),
 	% getting the ith lambda val from lambda_vec
 	lambda = lambda_vec(i);
@@ -54,15 +52,6 @@ for i = 1:length(lambda_vec),
 	% Computing the cross-validation set error
 	[error_val(i), grad] = linearRegCostFunction(Xval, yval, theta, 0);
 end
-=======
-
-
->>>>>>> 5fcbc5e322f43991569030e089774b831086481c
-
-
-
-
-
 
 % =========================================================================
 

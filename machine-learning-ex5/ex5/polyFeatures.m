@@ -15,16 +15,9 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-<<<<<<< HEAD
 for i = 1:p, 
  	X_poly(:, i) = X.^i; % Adds a new column for ith power of X in every iteration
 end
-=======
-
-
-
-
->>>>>>> 5fcbc5e322f43991569030e089774b831086481c
 
 % =========================================================================
 

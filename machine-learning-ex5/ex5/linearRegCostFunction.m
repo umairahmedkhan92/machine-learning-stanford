@@ -19,8 +19,6 @@ grad = zeros(size(theta));
 %               You should set J to the cost and grad to the gradient.
 %
 
-<<<<<<< HEAD
-
 
 H = X * theta;
 E = (H - y).^2;
@@ -28,14 +26,6 @@ T = [0; theta(2:end)]; % Ignoring theta for j = 0;
 J = (1/(2*m)) * sum(E) + (lambda/(2*m)) * sum(T.^2); % Computed regularized cost function for liner regression
 
 grad = (1/m) * (X' * (H - y)) + (lambda/m) * T; % Computed regularized gradient 
-=======
-H = X * theta;
-E = (H - y) .^ 2;
-T = [0; theta(2:end)];
-J = (1/(2*m)) * sum(E) + (lambda/(2*m)) * sum(T.^2);
-
-grad = (1/m) * (X' * (H - y)) + (lambda/m) * (T);
->>>>>>> 5fcbc5e322f43991569030e089774b831086481c
 % =========================================================================
 
 grad = grad(:);
